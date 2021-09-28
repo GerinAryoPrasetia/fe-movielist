@@ -1,22 +1,24 @@
-.card {
-  background-color: white;
-  width: 90%;
-  margin: -40px auto 0 auto;
-  border-radius: 8px;
-  padding: 65px 35px;
+.card-genre-one {
   display: flex;
+  width: 90%;
+  margin: 80px auto 0 auto;
   justify-content: space-between;
 }
 
-.genre-name {
+.genre-name-one {
   margin-left: 40px;
 }
 
-.genre-name h1 {
+.genre-name-one h1 {
   font-size: 58px;
+  color: white;
 }
 
-.genre-name button {
+.genre-name-one p {
+  color: white;
+}
+
+.genre-name-one button {
   width: fit-content;
   margin-top: 20px;
   padding: 16px 40px;
@@ -27,20 +29,22 @@
   cursor: pointer;
 }
 
-.movie-list {
+.movie-list-one {
   display: flex;
   justify-content: space-between;
 }
 
-.movie-details {
+.movie-details-one {
   margin-right: 20px;
   cursor: pointer;
 }
 
-.movie-title {
+.movie-title-one {
   font-weight: 600;
+  color: white;
 }
 
-.movie-genre {
+.movie-genre-one {
   font-weight: 300;
+  color: white;
 }

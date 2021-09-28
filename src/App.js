@@ -9,6 +9,7 @@ import Register from './pages/Register';
 import PeopleLists from './pages/PeopleLists';
 
 function App() {
+
   return (
     <div className="App">
       <Router>

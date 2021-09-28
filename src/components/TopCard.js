@@ -35,7 +35,6 @@ const TopCard = () => {
                         <p className="movie-title">Iron Man (2020)</p>
                         <p className="movie-genre">Action</p>
                     </div>
-
                 </div>
             </div>
         </div>
