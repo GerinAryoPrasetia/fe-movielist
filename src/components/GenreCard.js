@@ -1,36 +1,34 @@
-import React from 'react'
-import movie1 from '../img/movie1.png'
-import movie2 from '../img/movie2.png'
-import movie3 from '../img/movie3.png'
-import movie4 from '../img/movie4.png'
+import React, { useEffect, useState } from 'react'
+
 import './GenreCard.css'
+import MovieGenre from './movie/MovieGenre'
+
+const GENRE_API = "https://api.themoviedb.org/3/discover/movie?api_key=3aa675d6d217d61cd95e39d676f3f4cc&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=28%2C12&with_watch_monetization_types=flatrate"
 
 const GenreCard = () => {
+    const [movies, setMovies] = useState([]);
+
+    useEffect(() => {
+        try {
+            fetch(GENRE_API)
+                .then((res) => res.json())
+                .then((data) => {
+                    setMovies(data.results);
+                    // console.log('GENRE 1', data.results);
+                })
+        } catch (error) {
+            alert(error)
+        }
+
+    }, [])
+
     return (
         <div>
             <div className="card-genre-one">
                 <div className="movie-list-one">
-                    <div className="movie-details-one">
-                        <img src={movie1} alt="" />
-                        <p className="movie-title-one">Iron Man (2020)</p>
-                        <p className="movie-genre-one">Action</p>
-                    </div>
-                    <div className="movie-details-one">
-                        <img src={movie2} alt="" />
-                        <p className="movie-title-one">Iron Man (2020)</p>
-                        <p className="movie-genre-one">Action</p>
-                    </div>
-                    <div className="movie-details-one">
-                        <img src={movie3} alt="" />
-                        <p className="movie-title-one">Iron Man (2020)</p>
-                        <p className="movie-genre-one">Action</p>
-                    </div>
-                    <div className="movie-details-one">
-                        <img src={movie4} alt="" />
-                        <p className="movie-title-one">Iron Man (2020)</p>
-                        <p className="movie-genre-one">Action</p>
-                    </div>
-
+                    {movies.slice(0, 4).map((movie) =>
+                        <MovieGenre {...movie} key={movie.id} />
+                    )}
                 </div>
                 <div className="genre-name-one">
                     <h1>ACTION & <br /> ADVENTURE</h1>

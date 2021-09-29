@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './TopCard.css'
-import movie1 from '../img/movie1.png'
-import movie2 from '../img/movie2.png'
-import movie3 from '../img/movie3.png'
-import movie4 from '../img/movie4.png'
 import Movie from './movie/Movie'
 
 const FEATURED_API = "https://api.themoviedb.org/3/movie/popular?api_key=3aa675d6d217d61cd95e39d676f3f4cc&language=en-US&page=1"
@@ -11,7 +7,6 @@ const FEATURED_API = "https://api.themoviedb.org/3/movie/popular?api_key=3aa675d
 
 const TopCard = () => {
     const [movies, setMovies] = useState([]);
-
 
     useEffect(() => {
         try {
@@ -28,7 +23,12 @@ const TopCard = () => {
 
     return (
         <div>
-            <div div className="card" >
+            <div className="card" >
+                <div className="genre-name">
+                    <h1>TOP MOVIES  <br />THIS WEEK</h1>
+                    <p>Most people enjoying the movies</p>
+                    <button>See All</button>
+                </div>
                 {movies.length > 0 && movies.slice(0, 4).map((movie) =>
                     <Movie {...movie} key={movie.id} />
                 )}
@@ -39,9 +39,7 @@ const TopCard = () => {
 
 export default TopCard
     // < div className = "genre-name" >
-    //                 <h1>TOP MOVIES  <br />THIS WEEK</h1>
-    //                 <p>Most people enjoying the movies</p>
-    //                 <button>See All</button>
+    //                 
     //             </ >
     // <div className="movie-list">
     //     <div className="movie-details">

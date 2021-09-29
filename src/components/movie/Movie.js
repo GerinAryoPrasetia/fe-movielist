@@ -1,4 +1,5 @@
 import React from 'react'
+import './Movie.css'
 
 const Movie = ({ title, poster_path, overview }) => {
     // console.log('component masuk');

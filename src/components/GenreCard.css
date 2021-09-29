@@ -34,11 +34,6 @@
   justify-content: space-between;
 }
 
-.movie-details-one {
-  margin-right: 20px;
-  cursor: pointer;
-}
-
 .movie-title-one {
   font-weight: 600;
   color: white;

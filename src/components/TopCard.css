@@ -21,26 +21,16 @@
   margin-top: 20px;
   padding: 16px 40px;
   border: none;
-  background-color: #fd0240;
-  color: white;
+  background-color: #fff;
+  color: #fd0240;
   font-weight: 300;
   cursor: pointer;
+  border: #fd0240;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .movie-list {
   display: flex;
   justify-content: space-between;
-}
-
-.movie-details {
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.movie-title {
-  font-weight: 600;
-}
-
-.movie-genre {
-  font-weight: 300;
 }
