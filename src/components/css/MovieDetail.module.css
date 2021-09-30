@@ -1,0 +1,35 @@
+.movieDetail {
+  background-color: white;
+}
+
+.containerDetail {
+  padding: 0 60px 0 60px;
+}
+
+.movieContent {
+  padding: 40px 0 100px 0;
+}
+
+.movieImg {
+  width: 300px;
+  margin: 50px auto 50px auto;
+}
+
+.movieImg img {
+  width: 100%;
+}
+
+.movieDetail h1 {
+  font-size: 48px;
+}
+
+.movieContent button {
+  width: fit-content;
+  margin-top: 20px;
+  padding: 16px 40px;
+  border: none;
+  background-color: #fd0240;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+}

@@ -19,4 +19,6 @@ const Movie = ({ title, poster_path, overview }) => {
     )
 }
 
+
 export default Movie
+

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './TopCard.css'
 import Movie from './movie/Movie'
+import { Link } from 'react-router-dom'
 
 const FEATURED_API = "https://api.themoviedb.org/3/movie/popular?api_key=3aa675d6d217d61cd95e39d676f3f4cc&language=en-US&page=1"
 
@@ -30,7 +31,12 @@ const TopCard = () => {
                     <button>See All</button>
                 </div>
                 {movies.length > 0 && movies.slice(0, 4).map((movie) =>
-                    <Movie {...movie} key={movie.id} />
+                    <Link to={{
+                        pathname: `/movie-detail/${movie.id}`,
+                        state: { movies: movie },
+                    }}>
+                        <Movie {...movie} key={movie.id} />
+                    </Link>
                 )}
             </div>
         </div>

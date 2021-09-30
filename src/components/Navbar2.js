@@ -1,28 +1,26 @@
 import React from 'react'
-import './Navbar.css'
-import { AiOutlineSearch } from 'react-icons/ai'
 import logo from '../img/logo.png'
+import { AiOutlineSearch } from 'react-icons/ai'
 
-const Navbar = () => {
+const Navbar2 = () => {
     return (
-        <div>
+        <div style={{ backgroundColor: '#0F1014' }}>
             <header>
 
                 <img src={logo} alt="" className="logo" />
-
                 <ul className="nav-links">
-                    <li><a href='/'>ALL MOVIES</a></li>
+                    <li><a href="/">ALL MOVIES</a></li>
                     <li><a href="#">GENRES</a></li>
                     <li><a href="#">TOP MOVIES</a></li>
                     <li><a href="#">MY WATCH LIST</a></li>
                 </ul>
-                <div className="search-box">
-                    <button className="btn-search"><AiOutlineSearch /></button>
-                    <input type="text" className="input-search" placeholder="Search Movies..." />
+                <div class="search-box">
+                    <button class="btn-search"><AiOutlineSearch /></button>
+                    <input type="text" class="input-search" placeholder="Search Movies..." />
                 </div>
             </header>
         </div>
     )
 }
 
-export default Navbar
+export default Navbar2
