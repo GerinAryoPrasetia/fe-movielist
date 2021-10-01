@@ -1,0 +1,8 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.gridItem {
+  width: 200px;
+}
