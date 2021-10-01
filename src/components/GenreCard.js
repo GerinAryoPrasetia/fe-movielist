@@ -20,7 +20,6 @@ const GenreCard = () => {
         } catch (error) {
             alert(error)
         }
-
     }, [])
 
     return (

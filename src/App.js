@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import PeopleLists from './pages/PeopleLists';
 import MovieDetail from './components/movie/MovieDetail';
+import GenreLists from './pages/GenreLists';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/Register' component={Register} />
           <Route path='/other-list' component={PeopleLists} />
           <Route path='/movie-detail/:id' component={MovieDetail} />
+          <Route path='/genre' component={GenreLists} />
         </Switch>
       </Router>
     </div>
