@@ -9,6 +9,10 @@ import Register from './pages/Register';
 import PeopleLists from './pages/PeopleLists';
 import MovieDetail from './components/movie/MovieDetail';
 import GenreLists from './pages/GenreLists';
+import Action from './components/genre/Action';
+import Comedy from './components/genre/Comedy';
+import Drama from './components/genre/Drama';
+import Horror from './components/genre/Horror';
 
 function App() {
 
@@ -22,6 +26,10 @@ function App() {
           <Route path='/other-list' component={PeopleLists} />
           <Route path='/movie-detail/:id' component={MovieDetail} />
           <Route path='/genre' component={GenreLists} />
+          <Route path={'/action'} component={Action} />
+          <Route path={'/comedy'} component={Comedy} />
+          <Route path={'/drama'} component={Drama} />
+          <Route path={'/horror'} component={Horror} />
         </Switch>
       </Router>
     </div>

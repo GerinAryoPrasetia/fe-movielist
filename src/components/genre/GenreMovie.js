@@ -11,9 +11,9 @@ const GenreMovie = (props) => {
                 pathname: `/movie-detail/${props.id}`,
                 state: { movies: props },
             }}>
-                <div style={{ width: '70%' }}>
+                <div style={{ width: '250px', marginBottom: '30px' }}>
                     <img src={IMG_API + props.poster_path} alt="" style={{ width: '100%' }} />
-                    <p>{props.title}</p>
+                    <p style={{ color: '#fff', fontWeight: '600' }}>{props.title}</p>
                 </div>
             </Link>
 

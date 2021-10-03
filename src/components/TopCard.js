@@ -24,7 +24,7 @@ const TopCard = () => {
 
     return (
         <div>
-            <div className="card" >
+            <div className="card-top" >
                 <div className="genre-name">
                     <h1>TOP MOVIES  <br />THIS WEEK</h1>
                     <p>Most people enjoying the movies</p>

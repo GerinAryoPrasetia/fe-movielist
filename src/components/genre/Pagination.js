@@ -1,4 +1,7 @@
 import React from 'react'
+import bootstrap from 'bootstrap'
+import ReactPaginate from 'react-paginate'
+import '../css/Pagination.css'
 
 const Pagination = (props) => {
     const pageLinks = []
@@ -10,6 +13,7 @@ const Pagination = (props) => {
         pageLinks.push(<li className={`waves-effect ${active}`} key={i} onClick={() => props.nextPage(i)}>
             <a href="#">{i}</a>
         </li>)
+
     }
     return (
         <div className="container">

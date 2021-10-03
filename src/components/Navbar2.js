@@ -10,7 +10,7 @@ const Navbar2 = () => {
                 <img src={logo} alt="" className="logo" />
                 <ul className="nav-links">
                     <li><a href="/">ALL MOVIES</a></li>
-                    <li><a href="#">GENRES</a></li>
+                    <li><a href="/genre">GENRES</a></li>
                     <li><a href="#">TOP MOVIES</a></li>
                     <li><a href="#">MY WATCH LIST</a></li>
                 </ul>
