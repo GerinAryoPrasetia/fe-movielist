@@ -26,8 +26,6 @@ mutation MyMutation($movie_id: Int!, $title: String!, $description: String!) {
 }
 `;
 
-
-
 const IMG_API = 'https://image.tmdb.org/t/p/w1280';
 
 const MovieDetail = () => {

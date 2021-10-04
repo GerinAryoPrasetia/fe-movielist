@@ -13,6 +13,7 @@ import Action from './components/genre/Action';
 import Comedy from './components/genre/Comedy';
 import Drama from './components/genre/Drama';
 import Horror from './components/genre/Horror';
+import WatchList from './pages/WatchList';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path={'/comedy'} component={Comedy} />
           <Route path={'/drama'} component={Drama} />
           <Route path={'/horror'} component={Horror} />
+          <Route path={'/watch-list'} component={WatchList} />
         </Switch>
       </Router>
     </div>
