@@ -25,9 +25,9 @@ const Navbar = () => {
                 .then((data) => {
                     setMovies(data.results);
                     // console.log('GENRE 1', data.results);
-                    console.log('search', movies);
+                    console.log('search');
                 })
-            history.push('/search/' + movies)
+            history.push('/search/' + 1)
             // goMovieSearch();
         } catch (error) {
             alert(error)
