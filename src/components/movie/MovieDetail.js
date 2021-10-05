@@ -9,19 +9,21 @@ import { gql, useQuery, useLazyQuery, useMutation } from '@apollo/client';
 const GetWathcLists = gql`
 query MyQuery {
   movie {
-    title
-    movie_id
     description
+    movie_id
+    title
+    poster_path
   }
 }
 `;
 
 const InsertWathcList = gql`
-mutation MyMutation($movie_id: Int!, $title: String!, $description: String!) {
-  insert_movie_one(object: {movie_id: $movie_id, title: $title, description: $description}) {
+mutation MyMutation($movie_id: Int!, $title: String!, $description: String!, $poster_path: String!) {
+  insert_movie_one(object: {movie_id: $movie_id, title: $title, description: $description, poster_path: $poster_path}) {
     title
     movie_id
     description
+    poster_path
   }
 }
 `;
@@ -42,6 +44,7 @@ const MovieDetail = () => {
                 title: state.movies.title,
                 description: state.movies.overview,
                 movie_id: state.movies.id,
+                poster_path: state.movies.poster_path,
             }
         })
         console.log("TERKLIK WATCHLIST");

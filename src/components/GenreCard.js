@@ -15,7 +15,7 @@ const GenreCard = () => {
                 .then((res) => res.json())
                 .then((data) => {
                     setMovies(data.results);
-                    // console.log('GENRE 1', data.results);
+                    console.log('GENRE 1', data.results);
                 })
         } catch (error) {
             alert(error)

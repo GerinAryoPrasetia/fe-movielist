@@ -14,6 +14,7 @@ import Comedy from './components/genre/Comedy';
 import Drama from './components/genre/Drama';
 import Horror from './components/genre/Horror';
 import WatchList from './pages/WatchList';
+import MovieSearch from './pages/MovieSearch';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path={'/drama'} component={Drama} />
           <Route path={'/horror'} component={Horror} />
           <Route path={'/watch-list'} component={WatchList} />
+          <Route path={'/search'} component={MovieSearch} />
         </Switch>
       </Router>
     </div>

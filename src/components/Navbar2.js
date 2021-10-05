@@ -12,7 +12,7 @@ const Navbar2 = () => {
                     <li><a href="/">ALL MOVIES</a></li>
                     <li><a href="/genre">GENRES</a></li>
                     <li><a href="#">TOP MOVIES</a></li>
-                    <li><a href="#">MY WATCH LIST</a></li>
+                    <li><a href="/watch-list">MY WATCH LIST</a></li>
                 </ul>
                 <div class="search-box">
                     <button class="btn-search"><AiOutlineSearch /></button>
