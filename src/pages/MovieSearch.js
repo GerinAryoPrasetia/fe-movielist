@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 
-const MovieSearch = () => {
+const MovieSearch = (props) => {
+    console.log(props);
     return (
         <div>
             <Navbar />

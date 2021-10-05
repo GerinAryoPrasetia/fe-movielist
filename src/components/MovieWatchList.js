@@ -21,11 +21,9 @@ const MovieWatchList = (props) => {
                         }}>
                             <button className={styles.listBtnPrimary}>See Details</button>
                         </Link> */}
-
                         <button className={styles.listBtnSecondary} onClick={props.onDeleteMovie}>Remove</button>
                     </div>
                 </div>
-
             </div>
             <hr style={{ margin: '0 50px' }} />
         </div>

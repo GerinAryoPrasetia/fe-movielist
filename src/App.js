@@ -33,7 +33,7 @@ function App() {
           <Route path={'/drama'} component={Drama} />
           <Route path={'/horror'} component={Horror} />
           <Route path={'/watch-list'} component={WatchList} />
-          <Route path={'/search'} component={MovieSearch} />
+          <Route path={'/search/:id'} component={MovieSearch} />
         </Switch>
       </Router>
     </div>
