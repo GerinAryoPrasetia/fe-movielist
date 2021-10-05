@@ -17,23 +17,26 @@ const Navbar = () => {
     const [movies, setMovies] = useState([]);
 
 
-    const handleOnSumbit = (e) => {
+    const handleOnSumbit = async (e) => {
         e.preventDefault();
-        try {
-            fetch(`https://api.themoviedb.org/3/search/movie?api_key=3aa675d6d217d61cd95e39d676f3f4cc&language=en-US&query=${searchTerm}&page=1&include_adult=false`)
-                .then((res) => res.json())
-                .then((data) => {
-                    setMovies(data.results);
-                    // console.log('GENRE 1', data.results);
-                    console.log('search');
-                })
-            history.push('/search/' + 1)
-            // goMovieSearch();
-        } catch (error) {
-            alert(error)
-        }
+        // try {
+        //     await fetch(`https://api.themoviedb.org/3/search/movie?api_key=3aa675d6d217d61cd95e39d676f3f4cc&language=en-US&query=${searchTerm}&page=1&include_adult=false`)
+        //         .then((res) => res.json())
+        //         .then((data) => {
+        //             setMovies(data.results);
+        //             // console.log('GENRE 1', data.results);
+        //             console.log('search');
+        //         })
+
+        //     // goMovieSearch();
+        // } catch (error) {
+        //     alert(error)
+        // }
         setSearchTerm('');
+        console.log('Ini movies search', movies);
+        history.push('/search/' + searchTerm);
     }
+
     const handleOnChange = (e) => {
         setSearchTerm(e.target.value);
     }

@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 
 const MovieSearch = (props) => {
-    console.log('props movie search', props);
+    console.log('props movie search', props.match.params.id);
     return (
         <div>
             <Navbar />
