@@ -28,7 +28,8 @@ const TopCard = () => {
                 <div className="genre-name">
                     <h1>TOP MOVIES  <br />THIS WEEK</h1>
                     <p>Most people enjoying the movies</p>
-                    <button>See All</button>
+                    <Link to={{ pathname: '/top-movies' }}><button>See All</button> </Link>
+
                 </div>
                 {movies.length > 0 && movies.slice(0, 4).map((movie) =>
                     <Link to={{
