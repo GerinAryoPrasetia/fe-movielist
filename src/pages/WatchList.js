@@ -34,6 +34,7 @@ const WatchList = () => {
                 movie_id: id,
             }
         })
+        alert('Berhasil dihapus dari watchlist')
     }
 
 

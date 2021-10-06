@@ -11,7 +11,7 @@ const Navbar2 = () => {
                 <ul className="nav-links">
                     <li><a href="/">ALL MOVIES</a></li>
                     <li><a href="/genre">GENRES</a></li>
-                    <li><a href="#">TOP MOVIES</a></li>
+                    <li><a href="/top-movies">TOP MOVIES</a></li>
                     <li><a href="/watch-list">MY WATCH LIST</a></li>
                 </ul>
                 <div class="search-box">

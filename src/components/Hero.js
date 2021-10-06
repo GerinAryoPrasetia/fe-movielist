@@ -8,7 +8,7 @@ const Hero = () => {
             <Navbar />
             <div className="title">
                 <h1>THE MEG</h1>
-                <button className="title-btn">See Details</button>
+                {/* <button className="title-btn">See Details</button> */}
             </div>
             <div></div>
         </div>

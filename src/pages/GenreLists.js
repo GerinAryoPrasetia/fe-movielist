@@ -11,19 +11,19 @@ const GenreLists = () => {
             <div className={styles.genreList}>
                 <div className={styles.card}>
                     <p>Action</p>
-                    <a href='/action'>Action</a>
+                    <a href='/action'>See All</a>
                 </div>
                 <div className={styles.card}>
                     <p>Comedy</p>
-                    <a href='/comedy'>Comedy</a>
+                    <a href='/comedy'>See All</a>
                 </div>
                 <div className={styles.card}>
                     <p>Horror</p>
-                    <a href='/horror'>Horror</a>
+                    <a href='/horror'>See All</a>
                 </div>
                 <div className={styles.card}>
                     <p>Drama</p>
-                    <a href='/drama'>Drama</a>
+                    <a href='/drama'>See All</a>
                 </div>
             </div>
         </div>

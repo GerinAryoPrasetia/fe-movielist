@@ -38,7 +38,10 @@ const GenreCard = () => {
                 <div className="genre-name-one">
                     <h1>ACTION & <br /> ADVENTURE</h1>
                     <p>If you ready to prepare you heart to see the action</p>
-                    <button>See All</button>
+                    <Link to='/action'>
+                        <button>See All</button>
+                    </Link>
+
                 </div>
             </div>
         </div>

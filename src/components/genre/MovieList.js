@@ -6,7 +6,7 @@ const MovieList = (props) => {
     return (
         <div style={{ display: 'grid', gridTemplateColumns: 'auto auto auto auto', marginTop: '40px' }}>
             {props.movies.map((movie) =>
-                <GenreMovie {...movie} />
+                <GenreMovie {...movie} key={movie.id} />
             )}
         </div>
     )

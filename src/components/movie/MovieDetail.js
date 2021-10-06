@@ -39,15 +39,22 @@ const MovieDetail = () => {
     })
 
     const onClickWatchList = () => {
-        insertWatchList({
-            variables: {
-                title: state.movies.title,
-                description: state.movies.overview,
-                movie_id: state.movies.id,
-                poster_path: state.movies.poster_path,
-            }
-        })
+        try {
+            insertWatchList({
+                variables: {
+                    title: state.movies.title,
+                    description: state.movies.overview,
+                    movie_id: state.movies.id,
+                    poster_path: state.movies.poster_path,
+                }
+            })
+        } catch (error) {
+            alert(error)
+        }
         console.log("TERKLIK WATCHLIST");
+        alert(`
+        Berhasil ditambahkan ke watchlist : ${state.movies.title}`)
+        console.log(state.movies.title);
     }
     // console.log('state', state);
     // console.log(state.movies.poster_path);
@@ -61,7 +68,10 @@ const MovieDetail = () => {
                 </div>
                 <hr />
                 <div className={styles.movieContent}>
-                    <h1>{state.movies.title}</h1>
+                    <h1>{state.movies.title} </h1>
+                    <p> Rating :<span style={{ fontWeight: '700' }}> ({state.movies.vote_average}/10)</span></p>
+                    <p>Relaese Date : {state.movies.release_date}</p>
+                    <br />
                     <p>{state.movies.overview}</p>
                     <button onClick={onClickWatchList}>Add to WatchList</button>
                 </div>

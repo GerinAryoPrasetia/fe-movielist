@@ -15,7 +15,9 @@
 .card p {
   font-size: 48px;
 }
-
+.card a:hover {
+  font-size: 20px;
+}
 .genreList {
   display: flex;
   flex-direction: column;

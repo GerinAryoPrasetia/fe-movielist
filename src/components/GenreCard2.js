@@ -28,7 +28,10 @@ const GenreCard2 = () => {
                 <div className={styles.genreNameOne}>
                     <h1>DRAMA</h1>
                     <p>People will always cry watching drama</p>
-                    <button>See All</button>
+                    <Link to='/drama'>
+                        <button>See All</button>
+                    </Link>
+
                 </div>
                 {movies.slice(0, 4).map((movie) =>
                     <Link to={{
